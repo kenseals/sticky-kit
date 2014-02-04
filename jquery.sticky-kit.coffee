@@ -122,7 +122,7 @@ $.fn.stick_in_parent = (opts={}) ->
               top: offset
             }
 
-            css.width = elm.width() + "px"
+            css.width = elm.outerWidth() + "px"
 
             elm.css(css).addClass(sticky_class).after(spacer)
 
